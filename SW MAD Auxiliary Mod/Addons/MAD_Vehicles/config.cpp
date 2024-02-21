@@ -21,8 +21,10 @@ class CfgPatches
 class CfgVehicles
 {
     class 3AS_ATAT_Base; //Pulled from 3AS ATAT
-    class MEOP_veh_kodiak_cerb;
-    class C_mako1_cerb_F;
+    class MEOP_veh_kodiak_cerb; // MEOP_Vehicles --
+    class MEOP_veh_kodiak_base;
+    class C_mako1_cerb_F; // -- 
+
     class SWMAD_CIS_ATAT: 3AS_ATAT_Base
     {
         author = "Queen";
@@ -47,14 +49,34 @@ class CfgVehicles
 			"3as\3as_atat\data\atat_cabin_co.paa"
         };
     };
-    class SWMAD_LWSS_Kodiak: MEOP_veh_kodiak_cerb
+    class SWMAD_Kodiak: MEOP_veh_kodiak_base
     {
         author = "Queen";
-        scope = 2;
+        scope = 0;
         displayName = "[SWMAD] LWSS Kodiak";
+        side = 8;
         faction = "SWMAD_CIS";
         editorSubcategory = "SWMAD_Subcategory_Dropships";
-        hiddenSelections[]=
+        class TextureSources
+        {
+            class LWSS
+            {
+                displayName = "LWSS";
+                author = "Wulfsige";
+                textures[]=
+                {
+                    "MAD_Vehicles\data\kodiak\CIS_Kod_back_cer_co.paa",
+			        "MAD_Vehicles\data\kodiak\CIS_Kod_front_cer_co.paa"
+                };
+            };
+            factions[] = 
+            {
+                "SWMAD_CIS";
+            };
+        };
+        
+        
+/*         hiddenSelections[]=
 		{
 			"Camo1",
 			"Camo2"
@@ -63,7 +85,7 @@ class CfgVehicles
 		{
 			"MAD_Vehicles\data\kodiak\CIS_Kod_back_cer_co.paa",
 			"MAD_Vehicles\data\kodiak\CIS_Kod_front_cer_co.paa"
-		};
+		}; */
     };
 
     class SWMAD_LWSS_Mako: C_mako1_cerb_F
