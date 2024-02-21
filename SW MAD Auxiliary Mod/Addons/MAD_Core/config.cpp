@@ -40,6 +40,38 @@ class CfgPatches
     };
 };
 
+class cfgFactionClasses
+{
+    class SWMAD_CIS
+    {
+        displayName = "[SWMAD] CIS";
+    };
+};
+
+class CfgEditorSubcategories
+{
+    class SWMAD_Subcategory_VIPs
+    {
+        displayName = "VIP's";
+    }
+    class SWMAD_Subcategory_LWSS
+    {
+        displayName - "Loth-Wolf Sec. Solutions";
+    }
+    class SWMAD_Subcategory_Walkers
+    {
+        displayName = "Walkers";
+    };
+    class SWMAD_Subcategory_Dropships
+    {
+        displayName = "Dropships";
+    };
+    class SWMAD_Subcategory_APCs
+    {
+        displayName = "APC's";
+    };
+};
+
 
 class CfgWeapons
 {                                   
@@ -279,7 +311,7 @@ class CfgVehicles
         displayName = "[SWMAD] Katarn Backpack Officer (LWSS)";
         hiddenSelectionsTextures[] = 
         {
-            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Boss.paa",
+            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Boss_CO.paa",
         };
     };
     class LWSS_Katarn_Backpack_Fixer: 3AS_B_Katarn_Backpack_Fixer
@@ -289,7 +321,7 @@ class CfgVehicles
         displayName = "[SWMAD] Katarn Backpack NCO (LWSS)";
         hiddenSelectionsTextures[] = 
         {
-            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Fixer.paa";
+            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Fixer_CO.paa";
         };
 
     };
@@ -300,7 +332,7 @@ class CfgVehicles
         displayName = "[SWMAD] Katarn Backpack Medic (LWSS)";
         hiddenSelectionsTextures[] =
         {
-            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Scorch",
+            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Scorch_CO.paa",
         };
     };
     // Base Units 
@@ -312,6 +344,9 @@ class CfgVehicles
         displayName = "[SWMAD] Wulfsige";
         uniformClass = "Wulfsige_Katarn_Uniform_Sev";
         backpack = "Wulfsige_Katarn_Backpack_Sev";
+        faction = "SWMAD_CIS";
+        side = 8;
+        editorSubcategory = "SWMAD_Subcategory_VIPs";
         hiddenSelectionsTextures[]=
         {
             "\MAD_Core\data\uniforms\Wulfsige_Katarn_Uniform_Sev_CO.paa",
@@ -335,6 +370,9 @@ class CfgVehicles
         displayName = "[SWMAD] LWSS Commando";
         uniformClass = "LWSS_Katarn_Uniform";
         backpack = "LWSS_Katarn_Backpack";
+        faction = "SWMAD_CIS";
+        editorSubcategory - "SWMAD_Subcategory_LWSS";
+        side = 8;
         hiddenSelectionsTextures[] = 
         {
             "\MAD_Core\data\uniforms\LWSS_Katarn_Uniform_Standard_CO.paa",
