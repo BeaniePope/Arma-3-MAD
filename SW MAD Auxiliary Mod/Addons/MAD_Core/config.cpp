@@ -56,7 +56,7 @@ class CfgEditorSubcategories
     }
     class SWMAD_Subcategory_LWSS
     {
-        displayName - "Loth-Wolf Sec. Solutions";
+        displayName = "Loth-Wolf Sec. Solutions";
     }
     class SWMAD_Subcategory_Walkers
     {
@@ -345,7 +345,7 @@ class CfgVehicles
         uniformClass = "Wulfsige_Katarn_Uniform_Sev";
         backpack = "Wulfsige_Katarn_Backpack_Sev";
         faction = "SWMAD_CIS";
-        side = 8;
+        side = 2;
         editorSubcategory = "SWMAD_Subcategory_VIPs";
         hiddenSelectionsTextures[]=
         {
@@ -371,8 +371,8 @@ class CfgVehicles
         uniformClass = "LWSS_Katarn_Uniform";
         backpack = "LWSS_Katarn_Backpack";
         faction = "SWMAD_CIS";
-        editorSubcategory - "SWMAD_Subcategory_LWSS";
-        side = 8;
+        editorSubcategory = "SWMAD_Subcategory_LWSS";
+        side = 2;
         hiddenSelectionsTextures[] = 
         {
             "\MAD_Core\data\uniforms\LWSS_Katarn_Uniform_Standard_CO.paa",
