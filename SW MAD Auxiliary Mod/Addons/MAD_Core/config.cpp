@@ -56,7 +56,7 @@ class CfgEditorSubcategories
     }
     class SWMAD_Subcategory_LWSS
     {
-        displayName = "Loth-Wolf Sec. Solutions";
+        displayName = "LWSS";
     }
     class SWMAD_Subcategory_Walkers
     {
@@ -65,10 +65,6 @@ class CfgEditorSubcategories
     class SWMAD_Subcategory_Dropships
     {
         displayName = "Dropships";
-    };
-    class SWMAD_Subcategory_APCs
-    {
-        displayName = "APC's";
     };
 };
 
@@ -301,7 +297,7 @@ class CfgVehicles
         displayName = "[SWMAD] Katarn Backpack (LWSS)";
         hiddenSelectionsTextures[]=
         {
-            "\MAD_Core\data\backpacks\LWSS_Katarn_Backpack_Standard_CO.paa",
+            "\MAD_Core\data\backpacks\Katarn_Backpack_Standard_CO.paa",
         };
     };
     class LWSS_Katarn_Backpack_Boss: 3AS_B_Katarn_Backpack_Boss
@@ -411,18 +407,10 @@ class CfgVehicles
         linkedItems[] = 
         {
             "LWSS_Katarn_Helmet_Fixer",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
         respawnLinkedItems[] = 
         {
             "LWSS_Katarn_Helmet_Fixer",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
     };
     class SWMADUnit_LWSS_Officer: SWMADUnit_LWSS_Base
@@ -439,19 +427,11 @@ class CfgVehicles
         {
             "LWSS_Katarn_Helmet_Boss",
             "LWSS_Katarn_Vest_Boss",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
         respawnLinkedItems[]=
         {
             "LWSS_Katarn_Helmet_Boss",
             "LWSS_Katarn_Vest_Boss",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
     };
     class SWMADUnit_LWSS_Medic: SWMADUnit_LWSS_Base
@@ -467,18 +447,10 @@ class CfgVehicles
         linkedItems[] = 
         {
             "LWSS_Katarn_Helmet_Scorch",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
         respawnLinkedItems[] = 
         {
             "LWSS_Katarn_Helmet_Scorch",
-            "ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
         };
     };
     

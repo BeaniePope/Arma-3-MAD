@@ -115,7 +115,7 @@ class CfgVehicles
         side = 2;
         displayName = "[SWMAD]  Mako";
         faction = "SWMAD_CIS";
-        editorSubcategory = "SWMAD_Subcategory_APCs";
+        editorSubcategory = "EdSubcat_APCs";
         class TextureSources
         {
             class LWSS 
@@ -153,7 +153,7 @@ class CfgVehicles
         author = "Queen";
         scope = 2;
         scopeCurator = 2;
-        displayName = "[SWMAD] TWSS Mako";
+        displayName = "[SWMAD] LWSS Mako";
         textureList[] = 
         {
             "LWSS", 1,
